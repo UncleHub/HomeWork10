@@ -1,5 +1,6 @@
 package HomeWork10;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class EnteryPoint {
@@ -17,15 +18,20 @@ public class EnteryPoint {
                 System.out.println("Enter name of new file:");
                 fileName = cs.nextLine();
                 writing.writeFile(fileName);
+                break;
             }
             case ("2"):{
                 ReadingIsRule read = new ReadingIsRule();
                 System.out.println("Enter name of file you want read:");
                 fileName = cs.nextLine();
                 read.readFile(fileName);
-
+                break;
             }
             case ("0"):break;
+            default:
+                IOException e = new IOException();
+                e.getMessage();
+
         }
 
 
