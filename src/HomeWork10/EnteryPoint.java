@@ -1,6 +1,5 @@
 package HomeWork10;
 
-import java.io.IOException;
 import java.util.Scanner;
 
 public class EnteryPoint {
@@ -27,10 +26,12 @@ public class EnteryPoint {
                 read.readFile(fileName);
                 break;
             }
-            case ("0"):break;
+            case ("0"):
+                System.out.println("Good by.");
+                break;
             default:
-                IOException e = new IOException();
-                e.getMessage();
+                System.err.println("Bad decision my friend, there`s no functions under those line: "+choose);
+
 
         }
 

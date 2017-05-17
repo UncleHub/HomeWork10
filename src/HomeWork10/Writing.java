@@ -19,8 +19,9 @@ public class Writing {
                 System.out.println("Write new line, in case you finished type END.");
                 line = scanner.nextLine();
                 bufferedWriter.write(line);
+                bufferedWriter.newLine();
 
-            }while ( line.endsWith("END"));
+            }while ("END".equals(line)==false);
 
 
         } catch (IOException e) {
